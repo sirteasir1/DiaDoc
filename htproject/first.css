@@ -1,0 +1,240 @@
+body {
+    opacity: 0; 
+    transition: opacity 1s ease-in-out; 
+}
+
+body.loaded {
+    opacity: 1; 
+}
+
+.fade-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); 
+    z-index: 9999; 
+    opacity: 1; 
+    transition: opacity 0.6s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+    font-size: 1.5em;
+}
+
+.fade-overlay.hidden {
+    opacity: 0;
+    pointer-events: none; 
+}
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #243B55 0%, #141E30 100%);
+    background-size: cover;
+    backdrop-filter: blur(2px); 
+    color: #333; 
+}
+
+header {
+    background-color: #001f3f; 
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+.logo:hover {
+    transform:scale(1.2);
+}
+
+.logo img {
+    height: 30px; 
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background: linear-gradient(90deg, #243B55 0%, #141E30 100%);
+    backdrop-filter: blur(2px);
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color:#f4f4f4; 
+}
+
+.hero-image img {
+    max-width: 400px;
+    border-radius: 8px; 
+}
+
+.info {
+    background: linear-gradient(90deg, #243B55 0%, #141E30 100%);
+    backdrop-filter: blur(2px);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.info-text {
+    display: flex;
+    align-items: center;
+}
+
+.vertical-bar {
+    width: 5px;
+    height: 50px;
+    background-color: yellow; 
+    margin-right: 20px;
+}
+
+.info-text p {
+    font-size: 1.1em;
+    color: gainsboro; 
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease, opacity 0.3s ease; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+
+nav ul li a:active {
+    background-color: rgba(255, 255, 255, 0.2); 
+    opacity: 0.8; 
+}
+
+
+
+.stats {
+    background-color: #001f3f; 
+    color: white;
+    padding: 40px 20px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+}
+.stat-item:hover {
+    transform: scale(1.1);
+}
+.stat-number {
+    font-size: 2em; 
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.stat-unit {
+    font-size: 0.8em;
+    margin-bottom: 2px;
+}
+
+.stat-label {
+    font-size: 1em; 
+    color: #aaa;
+}
+.stat-item:hover .stat-number,
+.stat-item:hover .stat-unit {
+    color: #66ccff; 
+    text-shadow: 0 0 10px #66ccff; 
+}
+
+.stat-item:hover .stat-label {
+    color: #ddd; 
+    text-shadow: 0 0 5px #ddd;
+}
+.call-to-action {
+    background: linear-gradient(90deg, #243B55 0%, #141E30 100%);
+    backdrop-filter: blur(2px); 
+    padding: 40px 20px; 
+    display: flex;
+    justify-content: center;
+    gap: 200px; 
+    flex-wrap: wrap; 
+}
+
+.cta-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 30px;
+    max-width: 250px; 
+    flex-grow: 1; 
+    transition: 0.5s;
+}
+.cta-card:hover {
+     transform: scale(1.1);
+}
+.cta-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px; 
+}
+
+.cta-card p {
+    color: #555;
+    font-size: 1em;
+}
+
+
+@media (max-width: 768px) {
+    .call-to-action {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-card {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}

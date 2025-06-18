@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiaDoc</title>
+    <link rel="stylesheet" href="third.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="healthcare.png" alt="DiaDoc Logo">
+            <span>DiaDoc</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="first.html">Home</a></li>
+                <li><a href="sec.html">Calendary</a></li>
+                <li class="active"><a href="third.html">LogIn</a></li>
+            </ul>
+        </nav>
+    </header>
+     <div class="container">
+        <div class="form-wrapper">
+            <div class="form-header">
+                <h2 id="formTitle">Вход или Регистрация</h2>
+            </div>
+            <div class="form-body">
+                <div class="input-group">
+                    <input type="email" id="email" name="email" placeholder="Электронная почта">
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" name="password" placeholder="Пароль">
+                </div>
+                <div class="input-group">
+                    <input type="text" id="name" name="name" placeholder="Ваше имя">
+                </div>
+                <div class="input-group">
+                    <input type="text" id="lastname" name="lastname" placeholder="Ваша фамилия">
+                </div>
+                <div class="input-group">
+                    <input type="number" id="age" name="age" placeholder="Ваш возраст">
+                </div>
+                <div class="options">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="remember" name="remember">
+                        <span class="checkmark"></span>
+                        Запомнить меня
+                    </label>
+                    <a href="#" class="forgot-password">Забыли пароль?</a>
+                </div>
+                <button id="submitBtn">Войти</button>
+                <div class="social-login">
+                    <div class="social-icon google-login">
+                        <img src="google.jpeg" alt="Google">
+                    </div>
+                    <div class="social-icon apple-login">
+                        <img src="apple.jpeg" alt="Apple">
+                    </div>
+                </div>
+            </div>
+            <div class="form-footer">
+                <p id="toggleText">Нет аккаунта? <a href="#" id="toggleForm">Зарегистрироваться</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="third.js"></script>
+</body>
+</html>
